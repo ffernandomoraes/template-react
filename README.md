@@ -7,8 +7,8 @@
 * [Antd](https://ant.design)
 * [Emotion](https://emotion.sh/docs/introduction)
 * [Vite](https://vitejs.dev)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
+* [Eslint](https://eslint.org)
+* [Prettier](https://prettier.io)
 
 ## Getting started
 
