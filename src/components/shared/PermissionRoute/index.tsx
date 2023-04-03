@@ -1,11 +1,7 @@
-import { memo } from 'react';
+import { memo, PropsWithChildren } from 'react';
 import { Navigate } from 'react-router-dom';
 
-interface Props {
-  children: React.ReactNode;
-}
-
-const PermissionRoute = ({ children }: Props) => {
+const PermissionRoute = ({ children }: PropsWithChildren) => {
   const isAuthenticated = true;
 
   if (!isAuthenticated) return <Navigate replace to='/login' />;

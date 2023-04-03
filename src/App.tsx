@@ -1,17 +1,22 @@
+import 'antd/dist/reset.css';
+
 import { BrowserRouter } from 'react-router-dom';
 
-import ThemeProvider, { createTheme } from '@eduzz/houston-ui/ThemeProvider';
+import { ConfigProvider } from 'antd';
 
-import AppRoutes from './pages/routes';
+import { ThemeProvider } from '@emotion/react';
 
-const theme = createTheme('eduzz');
+import theme from '@/assets/theme';
+import AppRoutes from '@/pages/routes';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
+      <ConfigProvider>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </ConfigProvider>
     </ThemeProvider>
   );
 }
