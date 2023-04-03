@@ -1,5 +1,4 @@
 # React with Typescript boilerplate
-======================
 
 ## Technologies
 
